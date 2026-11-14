@@ -1,0 +1,205 @@
+
+.skill-gap-page {
+  min-height: 100vh;
+  padding: 35px;
+  background: #0d0b1b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.skill-gap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.skill-gap-header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.skill-gap-header p {
+  color: #aaa5c0;
+}
+
+.skill-gap-brand {
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: #302052;
+  color: #c9a8ff;
+  font-weight: bold;
+}
+
+.skill-gap-container {
+  max-width: 950px;
+  margin: auto;
+  display: grid;
+  gap: 22px;
+}
+
+.skill-gap-card {
+  background: #19162b;
+  border: 1px solid #30294a;
+  padding: 28px;
+  border-radius: 16px;
+}
+
+.skill-gap-card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.skill-gap-card p {
+  color: #aaa5c0;
+  line-height: 1.6;
+}
+
+.skill-gap-card label {
+  display: block;
+  margin: 22px 0 9px;
+  font-weight: bold;
+}
+
+.skill-gap-card input,
+.skill-gap-card textarea {
+  width: 100%;
+  padding: 14px;
+  background: #100e1e;
+  border: 1px solid #40375e;
+  border-radius: 9px;
+  color: white;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.skill-gap-card textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.skill-gap-card input:focus,
+.skill-gap-card textarea:focus {
+  outline: 1px solid #a47aff;
+}
+
+.skill-gap-card small {
+  display: block;
+  margin-top: 8px;
+  color: #aaa5c0;
+}
+
+.skill-gap-card > button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #7446cf, #a34bd7);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.skill-gap-card > button:hover {
+  opacity: 0.9;
+}
+
+.skill-percentage {
+  font-size: 45px;
+  font-weight: bold;
+  color: #b18aff;
+  margin: 20px 0;
+}
+
+.skill-progress {
+  height: 12px;
+  border-radius: 20px;
+  background: #302943;
+  overflow: hidden;
+}
+
+.skill-progress-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7446cf, #b18aff);
+  transition: width 0.4s;
+}
+
+.skill-gap-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 9px 13px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.skill-badge.matched {
+  background: #173c31;
+  color: #78e2b3;
+}
+
+.skill-badge.missing {
+  background: #48252d;
+  color: #ff9ba8;
+}
+
+.roadmap-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #38304e;
+}
+
+.roadmap-item:last-child {
+  border-bottom: none;
+}
+
+.roadmap-number {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #39245e;
+  color: #c9a8ff;
+  font-weight: bold;
+}
+
+.roadmap-item h3 {
+  margin: 0 0 6px;
+}
+
+.roadmap-item p {
+  margin: 0;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .skill-gap-page {
+    padding: 18px;
+  }
+
+  .skill-gap-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skill-gap-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-gap-card {
+    padding: 20px;
+  }
+}

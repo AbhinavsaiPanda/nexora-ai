@@ -1,0 +1,292 @@
+
+/* =====================================
+   NEXORA AI - RESUME BUILDER
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resume-builder-page {
+  min-height: 100vh;
+  background: #0b0a16;
+  color: #f5f3ff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* HEADER */
+
+.resume-builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 6%;
+  background: #121020;
+  border-bottom: 1px solid #302a48;
+}
+
+.resume-builder-header h1 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.resume-builder-header h1 span {
+  color: #9672ff;
+}
+
+.resume-builder-header p {
+  color: #9992af;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.resume-builder-header a {
+  color: #b69cff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* MAIN CONTAINER */
+
+.resume-builder-container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 35px auto;
+}
+
+/* INTRO */
+
+.resume-builder-intro {
+  padding: 35px;
+  margin-bottom: 25px;
+  border: 1px solid #49347b;
+  border-radius: 16px;
+  background: linear-gradient(
+    115deg,
+    #241a46,
+    #39216b,
+    #211a48
+  );
+}
+
+.resume-builder-intro span {
+  color: #c2aaff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.resume-builder-intro h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin: 13px 0;
+}
+
+.resume-builder-intro p {
+  color: #d0c5eb;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* FORM */
+
+.resume-builder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resume-form-section {
+  background: #151326;
+  border: 1px solid #2b2740;
+  border-radius: 13px;
+  padding: 28px;
+}
+
+.resume-form-section h2 {
+  color: #c0a9ff;
+  font-size: 19px;
+  margin-bottom: 24px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #302b43;
+}
+
+.resume-form-section label {
+  display: block;
+  color: #d3cde4;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 15px 0 9px;
+}
+
+/* INPUT GRID */
+
+.resume-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px 22px;
+}
+
+/* INPUTS */
+
+.resume-form-section input,
+.resume-form-section textarea {
+  width: 100%;
+  padding: 14px 15px;
+  background: #100e1d;
+  border: 1px solid #39334e;
+  border-radius: 8px;
+  color: #ffffff;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.resume-form-section input::placeholder,
+.resume-form-section textarea::placeholder {
+  color: #77718e;
+}
+
+.resume-form-section input:focus,
+.resume-form-section textarea:focus {
+  border-color: #9270ff;
+  box-shadow: 0 0 0 3px rgba(146, 112, 255, 0.1);
+}
+
+.resume-form-section textarea {
+  resize: vertical;
+  min-height: 90px;
+  line-height: 1.7;
+}
+
+/* DOWNLOAD BUTTON */
+
+.resume-download-button {
+  width: 100%;
+  padding: 17px;
+  margin: 10px 0 25px;
+  background: linear-gradient(
+    120deg,
+    #8058f0,
+    #6542c5
+  );
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-download-button:hover {
+  background: linear-gradient(
+    120deg,
+    #9676ff,
+    #7955e8
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(100, 65, 200, 0.2);
+}
+
+/* SUCCESS MESSAGE */
+
+.resume-builder-message {
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  background: #123b2b;
+  border: 1px solid #236c4c;
+  color: #86efac;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+
+.resume-builder-footer {
+  padding: 25px;
+  text-align: center;
+  color: #77718e;
+  border-top: 1px solid #29243a;
+  font-size: 12px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .resume-builder-container {
+    width: 94%;
+    margin: 25px auto;
+  }
+
+  .resume-builder-intro {
+    padding: 25px;
+  }
+
+  .resume-builder-intro h2 {
+    font-size: 23px;
+  }
+
+  .resume-form-section {
+    padding: 20px;
+  }
+
+  .resume-form-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .resume-builder-header {
+    padding: 18px;
+  }
+
+  .resume-builder-header h1 {
+    font-size: 21px;
+  }
+
+  .resume-builder-header p {
+    font-size: 10px;
+  }
+
+  .resume-builder-header a {
+    font-size: 12px;
+  }
+
+  .resume-builder-container {
+    width: 95%;
+    margin: 18px auto;
+  }
+
+  .resume-builder-intro {
+    padding: 20px;
+  }
+
+  .resume-builder-intro h2 {
+    font-size: 20px;
+  }
+
+  .resume-form-section {
+    padding: 16px;
+  }
+
+  .resume-form-section h2 {
+    font-size: 17px;
+  }
+
+  .resume-form-section input,
+  .resume-form-section textarea {
+    font-size: 13px;
+  }
+
+  .resume-download-button {
+    font-size: 13px;
+  }
+}
