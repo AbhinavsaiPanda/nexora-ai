@@ -88,7 +88,10 @@ CORS(
     app,
     resources={
         r"/api/*": {
-            "origins": ["http://localhost:5173"]
+           "origins": [
+    "http://localhost:5173",
+    "https://nexora-ai-red-seven.vercel.app"
+]
         }
     },
     supports_credentials=False
